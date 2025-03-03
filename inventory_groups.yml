@@ -3,7 +3,7 @@ all:
     linux:
       hosts:
         ansible_controller:
-          ansible_host: 54.219.40.228
+          ansible_host: 3.101.144.231
     windows:
       children:
          webservers:
