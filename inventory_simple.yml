@@ -8,6 +8,6 @@ webservers:
       ansible_winrm_transport: ntlm
       ansible_winrm_server_cert_validation: ignore
     webserver2:
-      ansible_host: <ip address provided for Ubuntu VM>
+      ansible_host: 3.101.144.231
       ansible_user: ubuntu
       ansible_ssh_private_key_file: /home/ubuntu/.ssh/id_rsa
