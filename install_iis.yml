@@ -3,5 +3,5 @@
   tasks:
     - name: Install IIS
       win_feature:
-        name: Web-Server
+        name: Weeb-Server
         state: present
