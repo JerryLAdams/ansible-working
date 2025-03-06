@@ -3,7 +3,7 @@
     - name: Create a github Repo
       github_repo:
         github_auth_key: "..."
-        username: "YOUR GITHUB USERNAME HERE"
+        username: "YOUR  GITHUB USERNAME HERE"
         name: "Hello-World"
         description: "This is your first repository"
         private: yes
