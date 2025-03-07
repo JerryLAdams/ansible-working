@@ -4,7 +4,6 @@
   template:
     src: templates/index.html.j2
     dest: c:/inetpub/wwwroot/index.html
-    ---
 - name: create web.config file
   template:
     src: templates/web.config.j2
