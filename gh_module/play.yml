@@ -21,3 +21,4 @@
         username: "JerryLAdams"
         name: "Hello-World"
         state: absent
+      register: result
