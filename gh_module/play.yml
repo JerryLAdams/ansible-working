@@ -3,15 +3,21 @@
     - github_token: "YOUR TOKEN HERE"
     - ansible_python_interpreter: "/usr/bin/python3"
   tasks:
-    - name: Create a GitHub Repo
+ #   - name: Create a GitHub Repo
+ #     github_repo:
+ #       github_auth_key:  "{{github_token}}" 
+ #       username: "JerryLAdams"
+ #       name: "Hello-World"
+ #       description: "First repo created with custom Ansible module"
+ #       private: yes
+ #       has_issues: no
+ #       has_wiki: no
+ #       has_downloads: no
+ #       state: present
+ #     register: result
+    - name: Delete GitHub Repo
       github_repo:
         github_auth_key:  "{{github_token}}" 
         username: "JerryLAdams"
         name: "Hello-World"
-        description: "First repo created with custom Ansible module"
-        private: yes
-        has_issues: no
-        has_wiki: no
-        has_downloads: no
-        state: present
-      register: result
+        state: absent
