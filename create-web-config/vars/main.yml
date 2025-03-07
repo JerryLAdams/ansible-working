@@ -1,7 +1,5 @@
 ---
 # vars file for create-web-config
----
-# vars file for create-web-config
     ip_address: 3.101.144.231
     database_name: mydatabasedev
     db_username: sqluser
