@@ -52,7 +52,7 @@ def github_repo_present(data):
     # default: something went wrong
     meta = {"status": result.status_code, 'response': result.json()}
     return True, False, meta
-
+    
 def github_repo_absent(data=None):
     headers = {
         "Authorization": "token {}" . format(data['github_auth_key'])
@@ -67,9 +67,9 @@ def github_repo_absent(data=None):
         return False, False, result
     else:
         result = {"status": result.status_code, "data": result.json()}
-        return True, False, result
- 
- def main():
+        return True, False, result 
+
+def main():
 
     fields = {
         "github_auth_key": {"required": True, "type": "str"},
